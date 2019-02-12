@@ -21,6 +21,7 @@
 		960FAFF82213555D00078185 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFF72213555D00078185 /* MenuOptionCell.swift */; };
 		960FAFFB221364B100078185 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFFA221364B100078185 /* FiltersViewController.swift */; };
 		960FAFFD221369BB00078185 /* FilterOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFFC221369BB00078185 /* FilterOptionCell.swift */; };
+		960FAFFF22136A5B00078185 /* FilterOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFFE22136A5B00078185 /* FilterOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		960FAFF72213555D00078185 /* MenuOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		960FAFFA221364B100078185 /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		960FAFFC221369BB00078185 /* FilterOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionCell.swift; sourceTree = "<group>"; };
+		960FAFFE22136A5B00078185 /* FilterOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				960FAFF42213511200078185 /* MenuOption.swift */,
+				960FAFFE22136A5B00078185 /* FilterOption.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				960FAFF52213511200078185 /* MenuOption.swift in Sources */,
 				960FAFF0221350D000078185 /* Protocols.swift in Sources */,
 				960FAFF82213555D00078185 /* MenuOptionCell.swift in Sources */,
+				960FAFFF22136A5B00078185 /* FilterOption.swift in Sources */,
 				960FAFEC22134FAF00078185 /* MenuViewController.swift in Sources */,
 				960FAFC722134CB700078185 /* AppDelegate.swift in Sources */,
 				960FAFEA22134D0900078185 /* ContainerViewController.swift in Sources */,

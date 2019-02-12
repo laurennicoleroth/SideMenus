@@ -18,6 +18,7 @@ class FiltersViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    configureTableView()
   }
   
   func configureTableView() {
@@ -37,5 +38,30 @@ class FiltersViewController: UIViewController {
     tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
   }
+  
+}
+
+extension FiltersViewController : UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 4
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! FilterOptionCell
+    
+    let filterOption = FilterOption(rawValue: indexPath.row)
+    cell.descriptionLabel.text = filterOption?.description
+    cell.iconImageView.image = filterOption?.image
+    
+    return cell
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let filterOption = FilterOption(rawValue: indexPath.row)
+    delegate?.handleFiltersToggle(forFilterOption: filterOption)
+  }
+}
+
+extension FiltersViewController : UITableViewDelegate {
   
 }

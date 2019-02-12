@@ -8,9 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "BrowseViewControllerDelegate"
+- "FilterOption"
 - "MenuOption"
 depends-member:
+- ["9SideMenus28BrowseViewControllerDelegateP", "FilterOption"]
 - ["9SideMenus28BrowseViewControllerDelegateP", "MenuOption"]
+- ["9SideMenus28BrowseViewControllerDelegateP", "handleFiltersToggle"]
 - ["9SideMenus28BrowseViewControllerDelegateP", "handleMenuToggle"]
 depends-nominal:
 - "9SideMenus28BrowseViewControllerDelegateP"
@@ -42,4 +45,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d37e0ad920e22e8140c4454b81046e26"
+interface-hash: "ff1d9bcb648986fb56e508f86b855aaa"

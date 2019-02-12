@@ -24,10 +24,15 @@ class BrowseViewController: UIViewController {
     
     navigationItem.title = "New York"
     navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "ic_menu_white_3x").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
+    
+    navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "ic_menu_white_3x").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleFiltersToggle))
   }
   
   @objc func handleMenuToggle() {
     delegate?.handleMenuToggle(forMenuOption: nil)
   }
   
+  @objc func handleFiltersToggle() {
+    delegate?.handleFiltersToggle(forFilterOption: nil)
+  }
 }

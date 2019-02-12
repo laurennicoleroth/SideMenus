@@ -204,6 +204,7 @@ SWIFT_CLASS("_TtC9SideMenus20BrowseViewController")
 @interface BrowseViewController : UIViewController
 - (void)viewDidLoad;
 - (void)handleMenuToggle;
+- (void)handleFiltersToggle;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -222,11 +223,30 @@ SWIFT_CLASS("_TtC9SideMenus23ContainerViewController")
 
 
 
+SWIFT_CLASS("_TtC9SideMenus16FilterOptionCell")
+@interface FilterOptionCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9SideMenus21FiltersViewController")
 @interface FiltersViewController : UIViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FiltersViewController (SWIFT_EXTENSION(SideMenus)) <UITableViewDelegate>
+@end
+
+@class UITableView;
+
+@interface FiltersViewController (SWIFT_EXTENSION(SideMenus)) <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
@@ -248,7 +268,6 @@ SWIFT_CLASS("_TtC9SideMenus18MenuViewController")
 @interface MenuViewController (SWIFT_EXTENSION(SideMenus)) <UITableViewDelegate>
 @end
 
-@class UITableView;
 
 @interface MenuViewController (SWIFT_EXTENSION(SideMenus)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

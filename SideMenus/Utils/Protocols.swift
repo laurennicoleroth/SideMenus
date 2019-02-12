@@ -10,4 +10,5 @@ import Foundation
 
 protocol BrowseViewControllerDelegate {
   func handleMenuToggle(forMenuOption menuOption: MenuOption?)
+  func handleFiltersToggle(forFilterOption filterOption: FilterOption?)
 }
