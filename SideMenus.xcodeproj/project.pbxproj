@@ -19,6 +19,8 @@
 		960FAFF0221350D000078185 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFEF221350D000078185 /* Protocols.swift */; };
 		960FAFF52213511200078185 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFF42213511200078185 /* MenuOption.swift */; };
 		960FAFF82213555D00078185 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFF72213555D00078185 /* MenuOptionCell.swift */; };
+		960FAFFB221364B100078185 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFFA221364B100078185 /* FiltersViewController.swift */; };
+		960FAFFD221369BB00078185 /* FilterOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FAFFC221369BB00078185 /* FilterOptionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		960FAFEF221350D000078185 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		960FAFF42213511200078185 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		960FAFF72213555D00078185 /* MenuOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		960FAFFA221364B100078185 /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		960FAFFC221369BB00078185 /* FilterOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 				960FAFE922134D0900078185 /* ContainerViewController.swift */,
 				960FAFED2213502E00078185 /* BrowseViewController.swift */,
 				960FAFEB22134FAF00078185 /* MenuViewController.swift */,
+				960FAFFA221364B100078185 /* FiltersViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				960FAFF72213555D00078185 /* MenuOptionCell.swift */,
+				960FAFFC221369BB00078185 /* FilterOptionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960FAFFD221369BB00078185 /* FilterOptionCell.swift in Sources */,
 				960FAFEE2213502E00078185 /* BrowseViewController.swift in Sources */,
 				960FAFF52213511200078185 /* MenuOption.swift in Sources */,
 				960FAFF0221350D000078185 /* Protocols.swift in Sources */,
@@ -262,6 +269,7 @@
 				960FAFEC22134FAF00078185 /* MenuViewController.swift in Sources */,
 				960FAFC722134CB700078185 /* AppDelegate.swift in Sources */,
 				960FAFEA22134D0900078185 /* ContainerViewController.swift in Sources */,
+				960FAFFB221364B100078185 /* FiltersViewController.swift in Sources */,
 				960FAFCF22134CB700078185 /* SideMenus.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

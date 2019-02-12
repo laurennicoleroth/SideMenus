@@ -222,6 +222,14 @@ SWIFT_CLASS("_TtC9SideMenus23ContainerViewController")
 
 
 
+SWIFT_CLASS("_TtC9SideMenus21FiltersViewController")
+@interface FiltersViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9SideMenus14MenuOptionCell")
 @interface MenuOptionCell : UITableViewCell
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
