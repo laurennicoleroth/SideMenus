@@ -1,0 +1,11 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "980ef5da5cfeca9506b331c313a1fcb0"
+build_time: [1550001945, 644777000]
+inputs:
+  "/Users/laurennicoleroth/Development/SideMenus/SideMenus/Controllers/BrowseViewController.swift": [1550001751, 0]
+  "/Users/laurennicoleroth/Development/SideMenus/SideMenus/Models/MenuOption.swift": [1550001941, 0]
+  "/Users/laurennicoleroth/Development/SideMenus/SideMenus/Utils/Protocols.swift": [1550000026, 0]
+  "/Users/laurennicoleroth/Development/SideMenus/SideMenus/View/MenuOptionCell.swift": [1549996132, 0]
+  "/Users/laurennicoleroth/Development/SideMenus/SideMenus/Controllers/MenuViewController.swift": [1550001736, 0]
+  "/Users/laurennicoleroth/Development/SideMenus/SideMenus/AppDelegate.swift": [1549999407, 0]
+  "/Users/laurennicoleroth/Development/SideMenus/SideMenus/Controllers/ContainerViewController.swift": [1550001060, 0]
